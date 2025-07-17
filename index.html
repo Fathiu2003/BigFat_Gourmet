@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BigFat Gourmet | Fine Dining Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff8f0;
+      color: #3e2f1c;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: #5a381e;
+      color: #fdf6ec;
+      font-weight: 600;
+      user-select: none;
+    }
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      letter-spacing: 0.1em;
+      cursor: default;
+    }
+    nav a {
+      color: #fdf6ec;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #d8b065;
+    }
+    .hero {
+      position: relative;
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fdf6ec;
+      padding: 0 2rem;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(90, 56, 30, 0.6);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .btn-reserve {
+      background: #d8b065;
+      color: #3e2f1c;
+      font-weight: 700;
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 40px;
+      font-size: 1.25rem;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(216, 176, 101, 0.6);
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+    .btn-reserve:hover {
+      background: #b7954c;
+      box-shadow: 0 8px 25px rgba(183, 149, 76, 0.8);
+      transform: translateY(-3px);
+    }
+    section.features {
+      max-width: 1000px;
+      margin: 4rem auto 3rem;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+      text-align: center;
+      user-select: none;
+    }
+    section.features div {
+      background: #fff3d9;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 25px rgba(216, 176, 101, 0.15);
+      flex: 1;
+      transition: box-shadow 0.3s ease;
+    }
+    section.features div:hover {
+      box-shadow: 0 8px 35px rgba(216, 176, 101, 0.35);
+    }
+    section.features h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #8c6d3f;
+    }
+    section.features p {
+      color: #5c4a1e;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    footer {
+      background: #5a381e;
+      color: #fdf6ec;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      user-select: none;
+      margin-top: 4rem;
+    }
+    @media (max-width: 900px) {
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+      .hero-content p {
+        font-size: 1.1rem;
+      }
+      section.features {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BigFat Gourmet</div>
+    <nav>
+      <a href="#">Menu</a>
+      <a href="#">Reservations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Indulge in Culinary Excellence</h1>
+      <p>Experience unforgettable flavors crafted with passion and tradition.</p>
+      <button class="btn-reserve">Reserve a Table</button>
+    </div>
+  </section>
+  <section class="features">
+    <div>
+      <h3>Authentic Recipes</h3>
+      <p>Traditional dishes made with fresh, locally sourced ingredients.</p>
+    </div>
+    <div>
+      <h3>Cozy Ambience</h3>
+      <p>A warm, inviting atmosphere perfect for intimate dinners and celebrations.</p>
+    </div>
+    <div>
+      <h3>Exceptional Service</h3>
+      <p>Our attentive staff ensures a memorable dining experience every time.</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 BigFat Gourmet • All rights reserved • Contact: info@bigfatgourmet.com
+  </footer>
+</body>
+</html>
